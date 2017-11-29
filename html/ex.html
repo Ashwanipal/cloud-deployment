@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+	<div style="width:30%; height:500px; float:left;">
+	<form action="http://127.0.0.1/cgi-bin/ex.py" method ="POST" target="my2">
+		<br/>
+		First Name: <input type="text" name="first_name"><br />
+		Last Name: <input type="text" name="last_name" />
+		<br/>
+		<input type="checkbox" name="maths" value="on" /> Maths
+		<input type="checkbox" name="physics" value="on" /> Physics
+		<br/>
+		<input type="radio" name="subject" value="maths" /> Maths
+		<input type="radio" name="subject" value="physics" /> Physics
+		<br/>
+		<textarea name="textcontent" cols="40" rows="4">
+		Type your text here...
+		</textarea>
+		<input type="submit" value="Select Subject" />
+	</form>
+	<form action="http://127.0.0.1/cgi-bin/a/reg.py" method ="POST" target="my2" style="border:2px,black">
+		<h3>Insert data into database</h3>
+		<br/>
+		User name: <input type="text" name="fname"><br/>
+		email: <input type="text" name="email" /><br/>
+		Mobile no: <input type="text" name="mob" /><br/>
+		password: <input type="text" name="pas" /><br/>
+		Gender: <input type="text" name="gen" /><br/>
+		DOB: <input type="text" name="dob" /><br/>
+		Check: <input type="text" name="ck" /><br/>
+		
+		<input type="submit" value="Select Subject" />
+	</form>
+</br>
+	<form enctype="multipart/form-data" action="http://127.0.0.1/cgi-bin/uplod.py" method="post" target="my2">
+   		<p>File: <input type="file" name="filename" /></p>
+   		<p><input type="submit" value="Upload" /></p>
+   	</form>
+	</div>
+	<div style="width:70%; height:500px; float:right;">
+		<iframe class="w3-border" name="my2" width="100%" height="100%"></iframe>
+	</div>
+
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<title>TechNext-home</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="../css/w3-theme-black.css">
+<link rel="stylesheet" href="../css/w3.css">
+<link rel="stylesheet" href="../css/animation.css">
+
+
+<body id="background">
+<!-- Navbar -->
+<div class="w3-top" >
+	<ul  class="w3-navbar w3-blue w3-xxlarge">
+		<li id="my1"><h1 class="fa fa-cloud"> TechNext Cloud</h1></li>
+		<li class="w3-right" style="padding-top:10px; padding-right:20px;"><a href="http://192.168.43.98/login.html" class="w3-btn w3-white w3-medium w3-round" >Login/Signup</a>
+	</ul> 
+</div>
+<!-- Main content: shift it to the right by 250 pixels when the sidenav is visible --------------------------->
+<div class="w3-main w3-card-2 w3-white" style="margin-left:8%; margin-right:8%; padding-top:33px;">
+	</br>
+	<div class="w3-row  w3-topbar w3-bottombar w3-border-indigo w3-blue ">
+		<center><h3 class="w3-text-white w3-lobster">WELCOME TO THE VIRTUAL WORD OF CLOUD </h3><center>
+	</div>
+	<div class="w3-row">
+    		<div class="w3-half w3-container" style="height:200px">
+      			<marquee direction="up" height="200" >
+				<ul><h2 class="w3-text-blue">Software as a service(SAAS)</h2></ul>
+				<ul><h2 class="w3-text-blue">Storage as a service(STAAS)</h2></ul>
+				<ul><h2 class="w3-text-blue">Container as a service(CAAS)</h2></ul>
+				<ul><h2 class="w3-text-blue">Infrastracture a service(IAAS)</h2></ul>
+				<ul><h2 class="w3-text-blue">My DRIVE</h2></ul>
+			</marquee>
+		</div>
+<!--image----------------------------------------------------------------------------------------------------->
+    		<div class="w3-half w3-container" style="height:200px">
+			<div style="height:100%; width:100%;">
+				<img class="mySlides" src="/images/cloud.jpg" style="height:100%; width:100%;">
+  				<img class="mySlides" src="/images/iaas.jpg" style="height:100%; width:100%;">
+				<img class="mySlides" src="/images/cloud1.jpg" style="height:100%; width:100%;">
+  				<img class="mySlides" src="/images/staas.jpg" style="height:100%; width:100%">
+  				<img class="mySlides" src="/images/saas.jpg" style="height:100%; width:100%;">
+			</div>
+		</div>
+	</div>
+
+		<script>
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+ 			var i;
+ 			   var x = document.getElementsByClassName("mySlides");
+ 			   for (i = 0; i < x.length; i++) {
+			      x[i].style.display = "none";  
+			   }
+ 			   myIndex++;
+			    if (myIndex > x.length) {myIndex = 1}    
+			    x[myIndex-1].style.display = "block";  
+			    setTimeout(carousel, 2000); // Change image every 2 seconds
+				}
+		</script>
+	<div class="w3-row">
+		<ul class="w3-blue w3-border w3-border-indigo">
+			<center><h2 class="w3-text-white w3-lobster">Seamlessly manage your infrastructure</h2></center>
+		</ul>
+		
+	</div>
+	</br>
+<!--image part----------------------------------------------------------------------------------------------------------->
+ 	<div class="w3-row">
+  		<div class="w3-third w3-container w3-hover-aqua" style="height:350px;">
+			<center>
+				<h3>Deploy in seconds</h3>
+  				<img src="/images/dis.png">
+  				<h5>Spin up a Droplet and get root access to a compute instance in only 55 seconds.</h5>
+			</center>
+  		</div>
+		<div class="w3-third w3-container w3-hover-aqua" style="height:350px;">
+			<center>
+				<h3>SSD performance</h3>
+  				<img src="/images/ssd.png">
+  				<h5>SSD cloud. Whether it's our Droplet compute instances or Block Storage, everything runs on SSDs</h5>
+			</center>
+  		</div>
+		<div class="w3-third w3-container w3-hover-aqua" style="height:350px;">
+			<center>
+				<h3>Simple API</h3>
+  				<img src="/images/api.png">
+  				<h5>An intuitive API and command line utilities allow you to run large-scale production workloads.</h5>
+			</center>
+  		</div>
+	</div>
+	<br/>
+	
+	<div class="w3-row">
+		<div class="w3-third w3-container w3-hover-aqua" style="height:350px;">
+			<center>
+				<h3>Highly available storage</h3>
+  				<img src="/images/has.png">
+  				<h5>Never run out of space with the ability to attach multiple highly available volumes up to 16TB to a Droplet.</h5>
+			</center>
+  		</div>
+		<div class="w3-third w3-container w3-hover-aqua" style="height:350px;">
+			<center>
+				<h3>Lightning fast network</h3>
+  				<img src="/images/lfn.png">
+  				<h5>Each hypervisor has a fault tolerant and redundant 40Gbps network to ensure uptime and throughput.</h5>
+			</center>
+  		</div>
+		<div class="w3-third w3-container w3-hover-aqua" style="height:350px;">
+			<center>
+				<h3>Teams work together</h3>
+  				<img src="/images/twt.png">
+  				<h5>Easily manage your cloud with your team by inviting others and setting access permission</h5>
+			</center>
+  		</div>
+	</div>
+	</br>
+	<footer>
+    		
+    		<div class="w3-container w3-blue">
+      			<center><h4>Social links</h4></center>
+			<center>
+			<div class="w3-section w3-padding-top w3-xxlarge">
+    			<a href="#" class="w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-facebook-official"></i></a>
+    			<a href="#" class="w3-hover-text-purple w3-show-inline-block"><i class="fa fa-instagram"></i></a>
+    			<a href="#" class="w3-hover-text-light-blue w3-show-inline-block"><i class="fa fa-twitter"></i></a>
+    			<a href="#" class="w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-linkedin"></i></a>
+  			</div>
+			</center>
+    		</div>
+		<div class="w3-container w3-light-blue w3-padding-32">
+			<center><h4><a href="#">http://WWW.TchNext.co.in/</a></h4></center>
+    		</div>
+	</footer>
+</div>
+</body>
+</html>
+
+
+

@@ -1,0 +1,21 @@
+
+#my1 {
+	padding-left:10px;
+	position: relative;
+    	animation-name: example;
+    	animation-duration: 30s;
+    	animation-iteration-count: infinite;
+}
+@keyframes example {
+    0%   {color:white;}
+    25%  {color:yellow;}
+    50%  {color:#76ff03;}
+    75%  {color:#00FFFF;}
+    100% {color:white;}
+}
+#background {
+	background: no-repeat linear-gradient(white 50%, #ffc107) fixed center center;
+      }
+
+
+

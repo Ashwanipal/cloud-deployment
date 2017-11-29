@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<title>TechNext-login/Signup</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/w3-theme-black.css">
+<link rel="stylesheet" href="../css/w3.css">
+<link rel="stylesheet" href="../css/animation.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+
+<body id="background">
+<!-- Navbar -------------------------------------------------------------------------------------------------------->
+
+<div class="w3-top">
+	<ul class="w3-navbar w3-blue w3-xxlarge w3-border">
+		<li id="my1"><h1 class="fa fa-cloud"> TechNext Cloud</h1></li>
+		<a href="http://192.168.43.98/" class="w3-container w3-right w3-indigo"><h1 class="fa fa-home"></h1></a>
+	</ul> 
+</div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidenav is visible -->
+<div class="w3-main w3-card-2 w3-white" style="margin-left:8%; margin-right:8%;">
+<!--login form------------------------------------------------------------------------------------------------------>
+	
+	<div class="w3-row w3-padding-64">
+		<br></br>
+		<div class="w3-half w3-container">
+      			<form action="http://192.168.43.98/cgi-bin/login.py" method ="POST" class="w3-container w3-light-grey w3-text-blue w3-margin">
+				<h2 class="w3-center">Log in to TechNext</h2>
+				<div class="w3-row w3-section">
+  					<div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+    					<div class="w3-rest">
+      						<input class="w3-input w3-border" name="usr" type="text" placeholder="User Name" required>
+    					</div>
+				</div>
+				<div class="w3-row w3-section">
+  					<div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-pencil"></i></div>
+    					<div class="w3-rest">
+      						<input class="w3-input w3-border" name="passwd" type="password" placeholder="Password" required>
+    					</div>
+				</div>
+	
+				<button class="w3-btn-block w3-section w3-blue w3-ripple w3-padding">LOGIN</button>
+				<p><a href="http://192.168.43.98/reset.html">Change  </a> password</p>
+			</form>	
+		</div>
+<!--signup form----------------------------------------------------------------------------------------------------->
+    		<div class="w3-half w3-container">
+			
+			<form enctype="multipart/form-data" action="http://192.168.43.98/cgi-bin/create.py" method ="POST" class="w3-container w3-light-grey w3-text-blue w3-margin">
+				<h2 class="w3-center">Create a new Account</h2>
+				<div class="w3-row w3-section">
+  					<div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+					<div class="w3-rest">
+  						<div class=" w3-half">
+    							<input class="w3-input w3-round-large w3-border" name="usr" type="text" placeholder="First Name" required>  
+    						</div>
+  						<div class=" w3-half">
+    							 <input class="w3-input w3-round-large w3-border" name="usr1" type="text" placeholder="Last Name" required>
+  						</div>
+					</div>
+				</div>
+				
+				<div class="w3-row w3-section">
+  					<div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-envelope-o"></i></div>
+    					<div class="w3-rest">
+      						<input class="w3-input w3-round-large w3-border" name="email" type="text" placeholder="Email" required>
+    					</div>
+				</div>
+				<div class="w3-row w3-section">
+  					<div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-phone"></i></div>
+    					<div class="w3-rest">
+      						<input class="w3-input w3-round-large w3-border" name="mob" type="text" placeholder="Phone no." required>
+    					</div>
+				</div>
+				<div class="w3-row w3-section">
+  					<div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-pencil"></i></div>
+    					<div class="w3-rest">
+      						<input class="w3-input w3-round-large w3-border" name="passwd" type="password"placeholder="Password" required>
+    					</div>
+				</div>
+				<div class="w3-row w3-section">
+  					<div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-pencil"></i></div>
+    					<div class="w3-rest">
+      						<input class="w3-input w3-round-large w3-border" name="passwd1" type="password" placeholder="Re enter Password" required>
+    					</div>
+				</div>
+	
+				<div class="w3-row w3-section">
+					Date of birth-----------:    
+				<select id="dd" name="dd">
+	        			<option>01</option>
+	        			<option>02</option>
+	        			<option>03</option>
+		 		       	<option>04</option>
+	 		               <option>05</option>
+       				        <option>06</option>
+        			        <option>07</option>
+       			 	        <option>08</option>
+       			 	        <option>09</option>
+       				         <option>10</option>
+       				         <option>11</option>
+       				         <option>12</option>
+       				         <option>13</option>
+       				         <option>14</option>
+       				         <option>15</option>
+       				         <option>16</option>
+       				         <option>17</option>
+       				         <option>18</option>
+       				         <option>19</option>
+       				         <option>20</option>
+       				         <option>21</option>
+       				         <option>22</option>
+       				         <option>23</option>
+       				         <option>24</option>
+       				         <option>25</option>
+				         <option>26</option>
+			       	         <option>27</option>
+			                <option>28</option>
+			                <option>29</option>
+			                <option>30</option>
+			                <option>31</option>
+			 	</select>    
+				<select id="mm" name="mm">
+				        <option>01</option>
+				        <option>02</option>
+				        <option>03</option>
+				        <option>04</option>
+        			        <option>05</option>
+        			        <option>06</option>
+        			        <option>07</option>
+        			        <option>08</option>
+        			        <option>09</option>
+        			        <option>10</option>
+        			        <option>11</option>
+        			        <option>12</option>
+        			</select>    
+				<select id="yy" name="yy">
+					<option>1965</option>
+					<option>1966</option>
+					<option>1967</option>
+					<option>1968</option>
+					<option>1969</option>		
+					<option>1970</option>
+					<option>1971</option>
+					<option>1972</option>
+					<option>1973</option>
+					<option>1974</option>
+	        			<option>1975</option>
+				        <option>1976</option>
+	       				 <option>1977</option>
+					<option>1978</option>
+					<option>1979</option>
+					<option>1980</option>
+					<option>1981</option>
+					<option>1982</option>
+					<option>1983</option>
+					<option>1984</option>
+					<option>1985</option>
+					<option>1986</option>
+					<option>1987</option>
+					<option>1988</option>
+					<option>1989</option>
+					<option>1990</option>
+					<option>1991</option>
+					<option>1992</option>
+					<option>1993</option>
+					<option>1994</option>
+					<option>1995</option>
+					<option>1996</option>
+					<option>1997</option>
+					<option>1998</option>
+					<option>1999</option>
+					<option>2000</option>
+				
+              			</select>	
+				</div>	
+
+				<div class="w3-row w3-section">
+					Select Gender--------:
+  					<input class="w3-radio" type="radio" name="gender" value="male" checked>  						<label class="w3-validate">Male</label>
+					<input class="w3-radio" type="radio" name="gender" value="female">
+  					<label class="w3-validate">Female</label>	
+				</div>
+				<div class="w3-row w3-section">
+					<p>uplode Profile Pic-: <input type="file" name="filename" required/></p>
+				</div>	
+
+   		
+				<div class="w3-row w3-section">
+					<input class="w3-check" type="checkbox" name="security" value="on" >
+					<label class="w3-validate">I accept it </label>
+				</div>
+				<button class="w3-btn-block w3-section w3-blue w3-ripple w3-padding">SIGN UP</button>
+			</form>
+	</div>
+	</div>
+	
+	<footer>
+    		
+    		<div class="w3-container w3-blue">
+      			<center><h4>Social links</h4></center>
+			<center>
+			<div class="w3-section w3-padding-top w3-xxlarge">
+    			<a href="#" class="w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-facebook-official"></i></a>
+    			<a href="#" class="w3-hover-text-purple w3-show-inline-block"><i class="fa fa-instagram"></i></a>
+    			<a href="#" class="w3-hover-text-light-blue w3-show-inline-block"><i class="fa fa-twitter"></i></a>
+    			<a href="#" class="w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-linkedin"></i></a>
+  			</div>
+			
+			
+			</center>
+    		</div>
+		<div class="w3-container w3-light-blue w3-padding-32">
+			<center><h4><a href="#">http://WWW.TchNext.co.in/</a></h4></center>
+    		</div></br></br>
+	</footer>
+</div>
+</body>
+</html>
+
+
+
